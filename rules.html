@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--------------------------Below are the Fonts--------------------------->
+   <link href="https://fonts.googleapis.com/css?family=Aclonica|Ceviche+One" rel="stylesheet">
+    <!------------------------------------------------------------------------>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Adventure On</title>
+    
+    <link type="text/css" link href="css/frontpage.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    
+<script src="js/rotate3Di.min.js" type="text/javascript"></script>
+<script src="js/3d-falling-leaves.min.js" type="text/javascript"></script>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  
+  
+
+  
+    
+<body>
+  
+
+
+  
+    <div class="container-fluid">
+    <div class="jumbotron" style='background-image:url(../projectcode_final/images/dungeons.jpg);background-size:cover'><h1 class="title">Dungeons and Dragons Adventures</h1>
+    <h3 class="subheading">Create your Story</h3>
+    <span class="glyphicon glyphicon-road"></span>
+    </div>
+  
+
+  
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class= "icon-bar"></span>
+          <span class= "icon-bar"></span>
+          <span class= "icon-bar"></span>
+        </button>
+      <a class="navbar-brand" href="index.html">DnD Adventures</a>
+    </div>
+  
+                      
+    <div class="collapse navbar-collapse" id="myNavbar">
+                          
+        <ul class="nav nav-pills nav-justified">
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="form.html">Character Forms</a></li>
+          <li class="active"><a href="rules.html">Rules</a></li>
+          <li><a href="inhabitants.html">Inhabitants</a></li>
+        </ul>
+    </div><!-- navbar collapse -->
+    </nav>
+    <br>
+    
+  <div class= "selections">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+   <img class="img-rounded ruleimage" src="../projectcode_final/images/dice.jpg" height="250" width="300" align="left" alt="dice"><p class="rules">Does an adventurer's sword hurt a dragon? or just bounce off its iron hard scales? Can a character swim across swim across a river, or get swept by the current? The D20 dice determines the success or failure of each character's action. Every character has <a href="#" data-toggle="tooltip" data-placement="top" title="Strength, Dexterity, Constitution, Intelligence, Wisdom and Charisma">ability scores.</a> These ability scores, and the<a href="#" data-toggle="tooltip" data-placement="top" title="Determined from the character's class and origin"> ability modifiers</a> derived from them are the basis of every d20 roll that a player makes on a character's or monster's behalf. Ability checks, attack rolls, and saving throws are the main kinds of d20 rolls, forming the core of the rules of the game.The general steps of the game are as follows: roll and add a modifier, apply circumstantial bonus and penalties, an comparing it to a<a href="#" data-toggle="tooltip" data-placement="top" title="If the total rolled exceeds, or equals the target number, the action is successful"> target number.</a></p>
+  </div>
+    </div>
+      </div> <!--closes out selections class-->
+  
+
+
+
+  
+  
+  
+ 
+
+  
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+  <script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>  
+    
+    <script> 
+$(document).ready(function(){
+    $("nav").click(function(){
+        var div = $("nav");
+        div.animate({opacity: '0.8'}, "fast");
+       
+    });
+});
+</script> 
+
+<script> 
+$(document).ready(function(){
+    $("nav").mouseout(function(){
+        var div = $("nav");
+        div.animate({opacity: '5'}, "fast");
+       
+    });
+});
+</script> 
+
+
+  </body>
+</html>
+

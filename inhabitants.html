@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--------------------------Below are the Fonts--------------------------->
+   <link href="https://fonts.googleapis.com/css?family=Aclonica|Ceviche+One" rel="stylesheet">
+    <!------------------------------------------------------------------------>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Adventure On</title>
+    
+    <link type="text/css" link href="css/frontpage.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/3d-falling-leaves.css" rel="stylesheet">
+    
+    
+<script src="js/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="js/animation-fix.js" type="text/javascript"></script>
+<script src="js/jquery-css-transform.js" type="text/javascript"></script>
+<script src="js/jquery-animate-css-rotate-scale.js" type="text/javascript"></script>
+<script src="js/rotate3Di-0.9.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="js/leaves_falling.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  
+  
+
+  
+    
+<body>
+  
+
+
+  
+    <div class="container-fluid">
+    <div class="jumbotron" style='background-image:url(../projectcode_final/images/dungeons.jpg);background-size:cover'><h1 class="title">Dungeons and Dragons Adventures</h1>
+    <h3 class="subheading">Create your Story</h3>
+    <span class="glyphicon glyphicon-road"></span>
+    </div>
+  
+
+  
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class= "icon-bar"></span>
+          <span class= "icon-bar"></span>
+          <span class= "icon-bar"></span>
+        </button>
+      <a class="navbar-brand" href="index.html">DnD Adventures</a>
+    </div>
+  
+                      
+    <div class="collapse navbar-collapse" id="myNavbar">
+                          
+        <ul class="nav nav-pills nav-justified">
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="form.html">Character Forms</a></li>
+          <li><a href="rules.html">Rules</a></li>
+          <li class="active"><a href="inhabitants.html">Inhabitants</a></li>
+        </ul>
+    </div><!-- navbar collapse -->
+    </nav>
+    <div class= "selections">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+        
+        <img class="img-rounded" src="../projectcode_final/images/ajace.JPG" height="100" width="200">
+        <h2 class="colheader"> Legendary Heroes</h2>
+        <p class="definitions">When word of your deeds spread through the kingdom, your reputation will be legendary. Fight legendary battles, defeat mythical monsters, fight with iron resolve. Your labors will offer no respite, but a legendary hero requires no such luxury.</p>
+      </div>
+      
+
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+      
+        <img class="img-rounded" src="../projectcode_final/images/battle1.JPG" height="100" width="200">
+        <h2 class="colheader">Epic Battles</h2>
+        <p class="definitions">A growling sound echoes through the walls of the cavern. As you slowly approach the entrance, you feel a moist warmth that steadily increases the futher you go. As you slowly peer around the corner, you see you target: the great dragon Aegeothrax. With sword and shield in hand, you parry and attack the beast as your elven friend fires magical ice arrows from cover. A chill begins to engulf the room, as you look above, a mage casts a blizzard speel, slowing the dragon, exposing its heart. You take your chance and slay the beast. This was just a Tuesday.</p>
+      </div>
+      
+      
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+      
+        <img class= "img-rounded" src="../projectcode_final/images/battle2.JPG" height="100" width="200">
+        <h2 class="colheader"> Mythical Creatures</h2>
+        <p class="definitions">Dragons, dire wolves, orcs and deities. Some will be your allies and others, your enemies. How you engage with them is up to you. These creatures are cunning and intelligent. You must have your wits about you when confronting them. The right words may form everlasting bonds of kinship, the wrong words may lead to a lifelong conflict.</p>
+    </div>
+    
+    
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+      
+        <img class="img-rounded" src="../projectcode_final/images/battle3.JPG" height="100" width="200">
+        <h2 class="colheader"> Form Alliances </h2>
+        <p class="definitions">Forging the right alliances is key to a successful campaign. From royalty to peasantry, you must form the optimum partnerships to ensure your party's survival, and your campaign's success. A king may be able to pull some strings, but a person of the streets may possess wisdom of things that are not known to those of the nobility.</p>
+    </div>
+      
+      
+        </div>
+    </div>
+  </div> <!--closes out selections class-->
+  
+  
+
+
+
+  
+  
+  
+ 
+
+
+  
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <!--<script src="js/jquery.min.js"></script>-->
+    <script src="js/bootstrap.min.js"></script>
+    
+      
+
+<script> 
+$(document).ready(function(){
+    $("nav").click(function(){
+        var div = $("nav");
+        div.animate({opacity: '0.8'}, "fast");
+       
+    });
+});
+</script> 
+
+
+<div  class="leaves"></div>
+		
+		<script type="text/javascript"> 
+		fallingLeaves();
+		</script>
+ 
+ 
+</body>
+</html>
+
